@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    // VARIABLES
+
     var calc = $('.calculator');
     var calcDisplay = calc.find('.calculator__display');
     var calcKeys = calc.find('.calculator__key');
