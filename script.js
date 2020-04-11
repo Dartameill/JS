@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     // SHOW RESULT
     calcEqual.on('click', function () {
-        calcDisplay.val( eval( calcDisplay.val() ) );
+        calcDisplay.val( eval( calcDisplay.val() ));
     });
 
     // POWER BUTTON
