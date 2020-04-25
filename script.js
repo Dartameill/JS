@@ -9,7 +9,7 @@ $(document).ready(function () {
     var calcEqual = calc.find('.calculator__key--equal');
     var calcPower = calc.find('.calculator__power');
     var calcSpace = calc.find('.calculator__backspace');
-    var calcSumm = calc.find('.calculator__button_1');
+
 
 
     // INIT CALC KEYS
@@ -63,5 +63,4 @@ $(document).ready(function () {
 
         $('.calculator__button_division').off('click');
     });
-
 });
