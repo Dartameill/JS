@@ -9,6 +9,8 @@ $(document).ready(function () {
     var calcEqual = calc.find('.calculator__key--equal');
     var calcPower = calc.find('.calculator__power');
     var calcSpace = calc.find('.calculator__backspace');
+    var calcSumm = calc.find('.calculator__button_1');
+
 
     // INIT CALC KEYS
     calcKeys.each(function () {
@@ -20,6 +22,7 @@ $(document).ready(function () {
     calcButton.on('click', function () {
         calcDisplay.val( calcDisplay.val() + $(this).attr('value') );
     });
+
 
     // CLEAR INPUT
     calcClear.on('click', function () {
@@ -39,6 +42,26 @@ $(document).ready(function () {
     // BACKSPACE BUTTON
     calcSpace.on('click', function () {
         calcDisplay.val( calcDisplay.val().substring(0, calcDisplay.val().length-1) );
+    });
+
+    $('.calculator__button_plus').one('click',function(){
+
+        $('.calculator__button_plus').off('click');
+    });
+
+    $('.calculator__button_minus').one('click',function(){
+
+        $('.calculator__button_minus').off('click');
+    });
+
+    $('.calculator__button_multiplication').one('click',function(){
+
+        $('.calculator__button_multiplication').off('click');
+    });
+
+    $('.calculator__button_division').one('click',function(){
+
+        $('.calculator__button_division').off('click');
     });
 
 });
