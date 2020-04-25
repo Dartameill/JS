@@ -63,4 +63,11 @@ $(document).ready(function () {
 
         $('.calculator__button_division').off('click');
     });
+
+    $('.calculator__button__point').one('click',function(){
+
+        $('.calculator__button__point').off('click');
+    });
+
+
 });
