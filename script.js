@@ -28,7 +28,6 @@ $(document).ready(function () {
             return lastSymbol !== prelastSymbol || !(/[\/*\-+.]/.test(lastSymbol));
         }
 
-
         calcDisplay.on('keydown', (event) => {
 
             const arithmeticPattern = /^[1-9\-][0-9\/*\-+. ]*$/;
