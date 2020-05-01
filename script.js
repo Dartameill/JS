@@ -24,7 +24,6 @@ $(document).ready(function () {
             const lastSymbol = expressionWithoutSpaces[length - 1];
             const prelastSymbol = expressionWithoutSpaces[length - 2];
 
-
             return lastSymbol !== prelastSymbol || !(/[\/*\-+.]/.test(lastSymbol));
         }
 
